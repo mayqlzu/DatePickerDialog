@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mayq.customviewdemo.OutScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="foo" />
+
+        <com.example.mayq.customviewdemo.InnerScrollView
+            android:id="@+id/inner_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color0"
+            android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:text="inside" />
+            </LinearLayout>
+
+        </com.example.mayq.customviewdemo.InnerScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:text="bar" />
+
+    </LinearLayout>
+
+</com.example.mayq.customviewdemo.OutScrollView>

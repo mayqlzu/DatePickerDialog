@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Label">
+        <attr name="padding" format="dimension" />
+
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+
+        <attr name="img" format="reference" />
+        <attr name="imgWidth" format="dimension|enum">
+            <enum name="wrap_content" value="-1" />
+        </attr>
+        <attr name="imgHeight" format="dimension|enum">
+            <enum name="wrap_content" value="-1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicatorView">
+        <attr name="dotSize" format="dimension" />
+        <attr name="dotMargin" format="dimension" />
+        <attr name="colorDefault" format="color|reference" />
+        <attr name="colorChecked" format="color|reference" />
+    </declare-styleable>
+</resources>

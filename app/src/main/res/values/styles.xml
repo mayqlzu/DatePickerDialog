@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DatePickerDialog" parent="@android:style/Theme.Dialog">
+        <!--不要背景，这样才能占满屏幕宽度-->
+        <item name="android:windowBackground">@null</item>
+        <!--不要标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--动画-->
+        <item name="android:windowAnimationStyle">@style/familiarvehicle_dialog_anim_style</item>
+    </style>
+
+    <style name="familiarvehicle_dialog_anim_style">
+        <item name="android:windowEnterAnimation">@anim/familiarvehicle_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/familiarvehicle_dialog_exit</item>
+    </style>
+
+    <style name="DialogActivity" parent="@android:style/Theme.Dialog">
+        <!--不要默认背景-->
+        <item name="android:windowBackground">@null</item>
+        <!--不要标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
